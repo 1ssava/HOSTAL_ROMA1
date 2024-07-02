@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Página de inicio{% endblock %}
+
+{% block content %}
+    <h2>Bienvenido a Hostal Roma</h2>
+    <p>Habitaciones</p>
+    <img src="{% static 'img/h1.jpg' %}" alt="Habitacion1" width="400px">
+    <img src="{% static 'img/h2.jpg' %}" alt="Habitacion2" width="400px">
+    <img src="{% static 'img/h3.jpg' %}" alt="Habitacion3" width="400px">
+    <img src="{% static 'img/h4.jpg' %}" alt="Habitacion4" width="400px">
+{% endblock %}

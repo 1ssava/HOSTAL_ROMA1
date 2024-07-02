@@ -1,9 +1,6 @@
 from django.shortcuts import render, redirect
 from .forms import HabitacionForm, HostalForm
 
-def home(request):
-    return render(request, 'home.html')
-
 def habitacion(request):
     if request.method == 'POST':
         form = HabitacionForm(request.POST)
@@ -23,3 +20,6 @@ def hostal(request):
     else:
         form = HostalForm()
     return render(request, 'hostal.html', {'form': form})
+
+def home(request):
+    return render(request, 'home_final.html')

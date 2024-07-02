@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Universidad List</title>
-</head>
-<body>
-    <h1>Universidad List</h1>
-    <ul>
-        {% for universidad in universidades %}
-            <li>{{ universidad.nombre }} - {{ universidad.direccion }}</li>
-        {% endfor %}
-    </ul>
-    <a href="{% url 'universidad' %}">Añadir universidad </a>
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Página de inicio{% endblock %}
+
+{% block content %}
+<h1>Listado de Universidades</h1>
+<ul>
+    {% for universidad in universidades %}
+        <li>{{ universidad.nombre }} - {{ universidad.direccion }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'universidad' %}">Añadir universidad </a>
+{% endblock %}

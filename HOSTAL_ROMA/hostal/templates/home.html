@@ -13,9 +13,9 @@
         <nav>
             <img src="{% static "img/logo.jpeg" %}" width='100'/>
             <ul>
-                <li><a href= '#'>Hostal Roma</a></li>
-                <li><a href= '#'>Habitaciones</a></li>
-                <li><a href= '#'>Servicios</a></li>
+                <li><a href= '{% url "inicio" %}'>Hostal Roma</a></li>
+                <li><a href= '{% url "habitacion" %}'>Habitaciones</a></li>
+                <li><a href= '{% url "habitacion" %}'>Servicios</a></li>
             </ul>
         </nav>
 

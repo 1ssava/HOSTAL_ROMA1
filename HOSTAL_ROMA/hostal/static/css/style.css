@@ -1,0 +1,63 @@
+:root {
+    --font-title: Modern;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-title);
+}
+
+nav {
+    background-color: #F3B563;
+}
+
+nav img {
+    padding: 0px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    padding: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-family: var(--font-title);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 80.67vh;
+}
+
+footer {
+    background-color: #F3B563;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+}
+
+.form-style {
+    border-color: aquamarine;
+}
+
+
+
+@font-face {
+    font-family: Modern;
+    src: url('./fonts/Moderniz.otf');
+}

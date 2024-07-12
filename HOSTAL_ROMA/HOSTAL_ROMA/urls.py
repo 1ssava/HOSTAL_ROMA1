@@ -7,5 +7,5 @@ urlpatterns = [
     path('usuarios/', include('users.urls')),
     path('gestion/', include('hostal.urls')),
     path('uni/', include('universidad.urls')),
-    path('', views.home, name ="inicio"),
+    path('', views.home, name ="home"),
 ]

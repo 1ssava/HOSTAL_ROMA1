@@ -1,0 +1,31 @@
+/* users/static/users/form_styles.css */
+
+.custom-form {
+    border: 1px solid #ced4da; /* Añade un borde al formulario */
+    padding: 20px; /* Añade espacio interno para que no esté pegado a los bordes */
+}
+
+.custom-form .form-group {
+    margin-bottom: 20px; /* Espacio entre grupos de campos */
+}
+
+.custom-form label {
+    font-weight: bold; /* Hace que las etiquetas de los campos sean más visibles */
+}
+
+.custom-form input[type="text"],
+.custom-form input[type="email"],
+.custom-form input[type="tel"],
+.custom-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Hace que el padding no afecte el ancho total */
+}
+
+.custom-form small {
+    display: block;
+    margin-top: 5px;
+    font-size: 80%;
+}

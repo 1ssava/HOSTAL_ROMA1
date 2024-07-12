@@ -1,12 +1,16 @@
+from django.contrib.auth.models import AbstractUser
 from django.db import models
-from django.contrib.auth.models import AbstractUser 
-from universidad.models import Universidad
 
 class CustomUser(AbstractUser):
-    rol = models.CharField(max_length=30, blank=True, null=True)
-    universidad = models.ForeignKey(Universidad,blank=True, null=True, on_delete=models.CASCADE)
+    ROLE_CHOICES = (
+        ('admin', 'Administrador'),
+        ('user', 'Usuario Común'),
+    )
+    rol = models.CharField(max_length=10, choices=ROLE_CHOICES, default='user')
+    username = models.CharField(max_length=20, unique=True)
+    first_name = models.CharField(max_length=30)
+    last_name = models.CharField(max_length=30)
+    phone_number = models.CharField(max_length=15)
 
     def __str__(self):
-        return self.first_name
-
-    
+        return self.username

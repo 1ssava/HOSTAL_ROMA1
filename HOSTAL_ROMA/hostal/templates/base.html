@@ -1,4 +1,4 @@
-<!-- base.html -->
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,13 +7,12 @@
     <!-- Cargar Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Cargar tu CSS personalizado -->
-    {% load static %}
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
     <header>
         <!-- Incluir el Navbar -->
-        {% include 'nav.html' %}
+        {% include 'nav_default.html' %}
     </header>
 
     <main role="main" class="container" style="min-height:80vh;">
